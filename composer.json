@@ -1,0 +1,41 @@
+{
+    "name": "wvjksetbtqlhzzbd/austest",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/wvjksetbtqlhzzbd/austest",
+    "keywords": ["Laravel", "Austest"],
+    "require": {
+        "illuminate/support": "~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wvjksetbtqlhzzbd\\Austest\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wvjksetbtqlhzzbd\\Austest\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wvjksetbtqlhzzbd\\Austest\\AustestServiceProvider"
+            ],
+            "aliases": {
+                "Austest": "Wvjksetbtqlhzzbd\\Austest\\Facades\\Austest"
+            }
+        }
+    }
+}
